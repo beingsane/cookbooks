@@ -1,0 +1,7 @@
+REGEDIT4
+[HKEY_CURRENT_USER\Environment]
+
+; GENERAL
+
+"HTTPS_PROXY"="http://username:password@ip:port"
+"HTTPS_PROXY"="http://username:password@ip:port"
