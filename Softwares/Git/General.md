@@ -14,8 +14,8 @@ Copy RSA key
 
 	cat id_rsa.pub
 
-## Fix Pull
+Fix Pull
 
-git reset --hard HEAD
-git clean -f -d
-git pull
+	git reset --hard HEAD
+	git clean -f -d
+	git pull
