@@ -1,4 +1,4 @@
-## Convert MySQL to PostgreSQL
+## Export
 
 Export MySQL database
 
