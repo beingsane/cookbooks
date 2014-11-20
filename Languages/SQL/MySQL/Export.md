@@ -2,7 +2,11 @@
 
 Export MySQL database
 
-	mysqldump -u user  --extended-insert=FALSE --no-create-info --compact --compatible=postgresql database > file.sql
+	mysqldump -u username -p database > backup.sql
+
+Export MySQL database (PostgreSQL)
+
+	mysqldump -u username --extended-insert=FALSE --no-create-info --compact --compatible=postgresql database > file.sql
 
 Convert MySQL to PostgreSQL
 
