@@ -30,3 +30,4 @@ Close with submodules
 Get submodules from cloned repo
 
 	git submodule update --init --recursive
+	git submodule foreach git pull origin master
