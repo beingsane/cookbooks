@@ -1,3 +1,4 @@
-# Helpers
+Commands
+========
 
-My collection of dotfiles.
+My collection of commands.
