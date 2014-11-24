@@ -17,10 +17,6 @@ Update from submodule folder
 
 Update all submodules
 
-	git submodule foreach git pull
-
-or
-
 	git submodule foreach git pull origin master
 
 Close with submodules
