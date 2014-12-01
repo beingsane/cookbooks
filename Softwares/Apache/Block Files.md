@@ -1,4 +1,6 @@
-## Deny access to extension xml files
+## Block Files
+
+Deny access to extension xml files
 
 	<Files ~ "\.xml$">
 		Order allow,deny
@@ -6,7 +8,7 @@
 		Satisfy all
 	</Files>
 
-## Allow access to extension xml files
+Allow access to extension xml files
 
 	<Files ~ "\.xml$">
 		Order allow,deny
@@ -14,7 +16,7 @@
 		Satisfy all
 	</Files>
 
-## Sitemap
+Sitemap
 
 	<FilesMatch "(?!sitemap)\.xml$">
 		Order allow,deny
