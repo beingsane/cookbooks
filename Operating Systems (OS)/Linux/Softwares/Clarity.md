@@ -1,4 +1,6 @@
-# Install Ruby
+##  Clarity
+
+Install Ruby
 
 	sudo apt-get install -y libmysqlclient-dev ruby-dev
 	sudo apt-get install -y g++
@@ -11,9 +13,7 @@ Start server
 
 	sudo clarity --username=admin --password=admin --port=8989 /var/log
 
-# Command clearlog
-
-Go to user home
+Command clearlog. Go to user home
 
 	cd
 
