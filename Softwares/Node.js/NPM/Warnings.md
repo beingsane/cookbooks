@@ -20,3 +20,9 @@ npm WARN package.json engine@ No repository field.
 
 npm WARN package.json engine@ No README data
 
+	touch README.md
+
+	Package Name
+	============
+	
+	My project name.
