@@ -1,3 +1,3 @@
 # Clean Cache
 
-sudo npm cache clean
+	npm cache clean
