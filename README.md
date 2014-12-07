@@ -1,10 +1,11 @@
-Commands
-========
+# Commands
 
-My collection of commands.
+Set of cookbooks to help install and setting software's.
 
-### Installation
+## Installation
 
 Only need clone the repo:
 
-	git clone git@github.com:brunobatista/commands.git Commands
+```bash
+git clone git@github.com:brunobatista/commands.git Commands
+```
