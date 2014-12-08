@@ -1,9 +1,15 @@
-## Install [RVM](https://rvm.io/rvm/install/)
+## [RVM](https://rvm.io/rvm/install/)
 
-	sudo apt-get install build-essential git-core
-	sudo apt-get install curl
+Install
+
+```bash
+apt-get install build-essential git-core
+apt-get install curl
+```
 
 Command to install
 
-	sudo curl -L https://get.rvm.io | bash -s stable --ruby
-	sudo curl -L https://get.rvm.io | bash -s stable --without-gems="rvm rubygems-bundler"
+```bash
+curl -L https://get.rvm.io | bash -s stable --ruby
+curl -L https://get.rvm.io | bash -s stable --without-gems="rvm rubygems-bundler"
+```
