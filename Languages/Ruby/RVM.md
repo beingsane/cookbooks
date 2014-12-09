@@ -6,7 +6,7 @@ Dependencies
 sudo apt-get install build-essential libreadline-dev libssl-dev curl libsqlite3-dev
 ```
 
-RVM Install
+Install
 
 ```bash
 gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
