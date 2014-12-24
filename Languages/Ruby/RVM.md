@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## [RVM](https://rvm.io/rvm/install/)
 
 ```bash
