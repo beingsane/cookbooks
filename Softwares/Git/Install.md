@@ -1,6 +1,6 @@
 ## Install Git
 
-	sudo apt-get install git
+	apt-get install git-core -y
 
 Set global configuration
 

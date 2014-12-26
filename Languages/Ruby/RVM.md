@@ -1,15 +1,13 @@
-## [RVM](https://rvm.io)
-
-Dependencies
+## [RVM](https://rvm.io/rvm/install/)
 
 ```bash
-sudo apt-get install build-essential libreadline-dev libssl-dev curl libsqlite3-dev
+apt-get install build-essential libreadline-dev libssl-dev curl libsqlite3-dev
 ```
 
-Install
+```bash
+curl -L get.rvm.io | bash -s stable --rails
+```
 
 ```bash
-gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
-curl -sSL https://get.rvm.io | bash -s stable --rails
-source $HOME/.rvm/scripts/rvm
+source $HOME /.rvm/scripts/rvm
 ```
