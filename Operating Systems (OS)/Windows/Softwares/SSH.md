@@ -22,5 +22,6 @@ cat C:\Users\<username>\.ssh\id_rsa.pub
 
 ssh <hostname>
 
+mkdir $HOME/.ssh
 vim $HOME/.ssh/authorized_keys
 ```
