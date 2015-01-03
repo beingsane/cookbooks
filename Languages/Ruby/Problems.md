@@ -25,7 +25,7 @@ chown -R `whoami`:`whoami` .gemrc
 ```
 
 ```bash
-sudo chown -R username:group ~/.gem
-sudo chown -R username:group ~/.rbenv
-sudo chown -R username:group ~/.rvm
+chown -R username:group ~/.gem
+chown -R username:group ~/.rbenv
+chown -R username:group ~/.rvm
 ```
