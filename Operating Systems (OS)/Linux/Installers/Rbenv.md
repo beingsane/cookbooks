@@ -1,4 +1,4 @@
-# Ruby environment
+# Rbenv
 
 ```bash
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv

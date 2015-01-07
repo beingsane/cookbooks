@@ -1,0 +1,11 @@
+# Homebrew
+
+```bash
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+echo 'export PATH=/usr/local/bin:$PATH' >> ~/.zshrc
+source ~/.zshrc
+
+brew doctor
+brew update
+```
