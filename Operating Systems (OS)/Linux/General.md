@@ -1,3 +1,13 @@
+# General
+
 ## Symbolic link
 
-	sudo ln -s [path] [name]
+```bash
+sudo ln -s [path] [name]
+```
+
+## Hard disk space
+
+```bash
+df -h
+```
