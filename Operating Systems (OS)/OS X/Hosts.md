@@ -1,5 +1,5 @@
 # Hosts
 
 ```bash
-vim /etc/hosts
+sudo vim /private/etc/hosts
 ```
