@@ -23,3 +23,9 @@ Show current group
 Show all users
 
 	users
+
+Remove user from group
+
+```bash
+gpasswd -d user group
+```
