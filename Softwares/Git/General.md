@@ -1,21 +1,35 @@
 # General
 
+Only repository
+
+```bash
+git config --bool core.bare true
+```
+
 ## SSH key
 
 Generate SSH key
 
-	ssh-keygen -t rsa -C "email@domain.com"
+```bash
+ssh-keygen -t rsa -C "email@domain.com"
+```
 
 Access home folder
 
-	cd ~/.ssh/
+```bash
+cd ~/.ssh/
+```
 
 Copy RSA key
 
-	cat id_rsa.pub
+```bash
+cat id_rsa.pub
+```
 
 Fix Pull
 
-	git reset --hard HEAD
-	git clean -f -d
-	git pull
+```bash
+git reset --hard HEAD
+git clean -f -d
+git pull
+```
