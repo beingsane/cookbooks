@@ -14,6 +14,7 @@ CREATE TABLESPACE tbs_username_01
 CREATE USER username
 	IDENTIFIED BY password
 	DEFAULT TABLESPACE tbs_username_01
+
 	QUOTA 20M on tbs_username_01;
 ```
 

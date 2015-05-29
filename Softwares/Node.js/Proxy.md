@@ -1,19 +1,33 @@
-## Proxy configurations
+# Proxy configurations
 
-List configurations
+#### List configurations
 
-	npm config list
+```bash
+npm config list
+```
 
-Set registry URL
+#### Set registry URL
 
-	npm config set registry http://registry.npmjs.org/
+```bash
+npm config set registry http://registry.npmjs.org/
+```
 
-Set proxy
+#### Set proxy
 
-	npm config set http-proxy http://username:password@ip:port
-	npm config set https-proxy http://username:password@ip:port
+```bash
+npm config set http-proxy http://username:password@ip:port
+npm config set https-proxy http://username:password@ip:port
+```
 
 Remove proxy
-	
-	npm config delete http-proxy
-	npm config delete https-proxy
+
+```bash	
+npm config delete http-proxy
+npm config delete https-proxy
+```
+
+#### SSL
+
+```bash	
+npm set strict-ssl false
+```
