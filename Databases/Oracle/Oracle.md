@@ -30,17 +30,21 @@ DROP TABLESPACE tbs_username_01 INCLUDING CONTENTS;
 GRANT ALL ON table TO username;
 ```
 
+```sql
 GRANT SELECT ON table1 TO table2;
 
 CREATE USER poweruser IDENTIFIED BY known_pwd;
 GRANT create session TO poweruser;
 GRANT create database link TO poweruser WITH ADMIN OPTION;
+```
 
 #### Procedure
 
+```sql
 GRANT create any procedure TO poweruser;
 GRANT drop any procedure TO poweruser;
 GRANT execute any procedure TO poweruser;
+```
 
 ####
 
@@ -79,8 +83,10 @@ SELECT * FROM dba_sys_privs;
 SELECT * FROM dba_role_privs;
 ```
 
+```sql
 ALTER USER username GRANT CONNECT THROUGH username;
 
 CREATE SYNONYM TABLE FOR UserA.TABLE;
 
 SELECT FILE_NAME, BLOCKS, TABLESPACE_NAME FROM DBA_DATA_FILES;
+```
