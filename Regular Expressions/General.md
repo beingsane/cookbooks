@@ -1,0 +1,7 @@
+# Regex
+
+##### Or
+
+```
+(TEXT|ANOTHERTEXT).*$
+```
