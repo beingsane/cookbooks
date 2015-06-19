@@ -1,5 +1,14 @@
 # PHP
 
+Simulate a install to see what will be install and check version of PHP:
+
+```bash
+sudo apt-get -s install php5
+sudo apt-cache policy php5
+```
+
+Install PHP and dependencies
+
 ```bash
 sudo apt-get update
 sudo apt-get install -y php5-cli php5-curl php5-gd php5-mcrypt php5-readline php5-xdebug
@@ -17,7 +26,10 @@ sudo vim /etc/php5/fpm/php.ini
 
 ```bash
 cgi.fix_pathinfo=0
+date.timezone = America/Sao_Paulo
 ```
+
+> Repeat this for `sudo vim /etc/php5/cli/php.ini`
 
 ```bash
 sudo service php5-fpm restart
@@ -73,6 +85,26 @@ sudo service apache2 restart
 cat << EOF | sudo tee -a /var/www/html/info.php
 <?php phpinfo();
 EOF
+```
+
+##### Permissions
+
+```bash
+ll /var/run/php5-fpm.sock
+
+srw-rw---- 1 www-data www-data 0 Jun 18 11:15 /var/run/php5-fpm.sock=
+```
+
+```bash
+sudo vim /etc/php5/fpm/pool.d/www.conf
+
+listen.owner = www-data
+listen.group = www-data
+listen.mode = 0660
+```
+
+```bash
+sudo service php5-fpm restart
 ```
 
 #### Xdebug

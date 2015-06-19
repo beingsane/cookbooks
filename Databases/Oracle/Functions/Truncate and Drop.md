@@ -1,4 +1,4 @@
-# Truncate
+# Truncate and Drop
 
 Disable all FK constraints from user schema
 

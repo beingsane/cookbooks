@@ -1,8 +1,16 @@
 # Nginx
 
-```bash
-sudo apt-get install nginx
+Simulate a install to see what will be install and check version of Nginx:
 
+```bash
+apt-get -s install nginx
+apt-cache policy nginx
+```
+
+Install Nginx
+
+```bash
+sudo apt-get install -y nginx
 sudo service nginx restart
 ```
 
