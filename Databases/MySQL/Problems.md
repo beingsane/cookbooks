@@ -10,6 +10,8 @@ touch /tmp/mysql.sock
 mysqld_safe restart
 ```
 
+##### OS X
+
 ```
 rm -rf /usr/local/var/mysql/macbook.local.err
 mysql.server start
