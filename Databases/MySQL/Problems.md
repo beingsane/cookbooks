@@ -1,6 +1,13 @@
 # Problems
 
-##### ERROR 2002 (HY000)
+#### Connection Failed
+
+Host 'IP_ADDRESS' is not allowed to connect to this MySQL server
+
+```bash
+```
+
+#### ERROR 2002 (HY000)
 
 Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
 

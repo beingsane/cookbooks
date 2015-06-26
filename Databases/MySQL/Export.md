@@ -1,17 +1,25 @@
-## Export
+# Export
 
-Export MySQL database
+#### Export MySQL database
 
-	mysqldump -u username -p database > backup.sql
+```bash
+mysqldump -u username -p database > backup.sql
+```
 
-Export MySQL database (PostgreSQL)
+#### Export MySQL database (PostgreSQL)
 
-	mysqldump -u username --extended-insert=FALSE --no-create-info --compact --compatible=postgresql database > file.sql
+```bash
+mysqldump -u username --extended-insert=FALSE --no-create-info --compact --compatible=postgresql database > file.sql
+```
 
 Convert MySQL to PostgreSQL
 
-	sed "s/\\\'/\'\'/g" file.sql > file1.sql
+```bash
+sed "s/\\\'/\'\'/g" file.sql > file1.sql
+```
 
-Import file to PostgreSQL
+#### Import file to PostgreSQL
 
-	psql database < file1.sql
+```bash
+psql database < file1.sql
+```
