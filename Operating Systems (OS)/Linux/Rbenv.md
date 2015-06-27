@@ -1,23 +1,53 @@
 # Rbenv
 
+#### Ubuntu
+
 ```bash
-git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-source .bashrc
-type rbenv
+sudo apt-get update
+
+sudo apt-get install -y git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
 ```
 
 ```bash
-git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-rbenv install --list
-rbenv install 2.1.5
-rbenv local 2.1.5
-rbenv global 2.1.5
+git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+source ~/.bash_profile
+
+git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bash_profile
+source ~/.bash_profile
+```
+
+```bash
+rbenv install -v 2.2.1
+rbenv global 2.2.1
+
+ruby -v
+```
+
+```bash
+echo "gem: --no-document" > ~/.gemrc
+```
+
+```bash
+gem install bundler
+```
+
+###### Rails
+
+```bash
+gem install rails -v 4.2.0
+
 rbenv rehash
-rbenv versions
+
+rails -v
 ```
 
+###### MySQL
+
 ```bash
-apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6 libreadline6-dev zlib1g zlib1g-dev
+sudo apt-get install -y mysql-server mysql-client libmysqlclient-dev
+
+gem install mysql2
 ```
