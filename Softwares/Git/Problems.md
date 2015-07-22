@@ -50,3 +50,12 @@ git config --global core.editor "mate -w"
 ```bash
 export GIT_EDITOR=vim
 ```
+
+##### Push
+
+> error: src refspec project does not match any.
+> error: failed to push some refs to 'project@domain.com:project'
+
+```bash
+git push -u origin master
+```

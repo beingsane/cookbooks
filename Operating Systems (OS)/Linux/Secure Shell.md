@@ -1,7 +1,8 @@
-# Secure Shell
+# Secure Shell (SSH)
+
+#### Server
 
 ```bash
-sudo apt-get install openssh-client
 sudo apt-get install openssh-server
 sudo service ssh start
 ```
@@ -14,4 +15,18 @@ UseDNS no
 EOF
 
 sudo service ssh restart
+```
+
+#### Client
+
+```bash
+sudo apt-get install openssh-client
+```
+
+#### Login
+
+```bash
+cat ~/.ssh/id_rsa.pub | ssh user@ip "mkdir -p ~/.ssh && cat >>  ~/.ssh/authorized_keys"
+
+ssh user@ip
 ```

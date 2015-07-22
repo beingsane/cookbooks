@@ -17,17 +17,24 @@ sudo shutdown -r now
 Add the docker group if it doesn't already exist:
 
 ```bash
-groupadd docker
+sudo groupadd docker
 ```
 
 Add the connected user "${USER}" to the docker group. You may have to logout and log back in again for this to take effect:
 
 ```bash
-gpasswd -a ${USER} docker
+sudo gpasswd -a ${USER} docker
 ```
 
 Restart the Docker daemon:
 
 ```bash
-service docker.io restart
+sudo service docker restart
 ```
+
+Reload user session:
+
+```bash
+su - $USER
+```
+
