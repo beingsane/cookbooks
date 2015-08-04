@@ -44,3 +44,11 @@ ALTER USER username IDENTIFIED BY password;
 
 ALTER USER username GRANT CONNECT THROUGH username;
 ```
+
+##### Users
+
+```sql
+SELECT * FROM dba_users
+
+SELECT username FROM dba_users;
+```
