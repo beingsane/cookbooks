@@ -43,3 +43,9 @@ su - $USER
 ```bash
 $(boot2docker shellinit)
 ```
+
+**Get http:///var/run/docker.sock/v1.19/images/json: dial unix /var/run/docker.sock: no such file or directory. Are you trying to connect to a TLS-enabled daemon without TLS?**
+
+```bash
+$(boot2docker up)
+```

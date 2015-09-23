@@ -21,3 +21,11 @@ axel --help
 ```bash
 axel -n 8 url
 ```
+
+## Custom configuration
+
+```bash
+vim ~/.axelrc
+
+http_proxy = http://username:password@ip:port
+```
